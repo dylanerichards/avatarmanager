@@ -22,6 +22,7 @@ group :development do
   gem 'pry'
   gem 'factory_girl_rails'
   gem 'guard-rspec'
+  gem 'capybara'
 end
 
 group :production do
