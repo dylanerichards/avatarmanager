@@ -13,6 +13,7 @@ gem 'spring',        group: :development
 
 gem 'devise'
 gem 'paperclip'
+gem 'aws-sdk', '~> 1.20.0'
 
 group :development do
   gem 'sqlite3'
