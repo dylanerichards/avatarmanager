@@ -27,7 +27,7 @@ class AvatarsController < ApplicationController
 
   def update
     if @avatar.update(avatar_params)
-      redirect_to root_path, notice: "You've updated the photo."
+      redirect_to avatars_path, notice: "You've updated the photo."
     else
       render :edit
     end
