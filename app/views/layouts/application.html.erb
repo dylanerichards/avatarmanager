@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<%= link_to 'Home', root_path %>
+  <%= render 'layouts/navbar' unless @disable_nav %>
 
 <%= yield %>
 

@@ -11,11 +11,13 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
-gem 'devise'
-gem 'paperclip'
 gem 'aws-sdk', '~> 1.20.0'
-gem 'bitters'
+gem 'paperclip'
+gem 'bootstrap-sass'
 gem 'bourbon'
+gem 'bitters'
+gem 'neat'
+gem 'refills'
 
 group :development do
   gem 'sqlite3'
