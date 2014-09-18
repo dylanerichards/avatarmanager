@@ -26,6 +26,15 @@ feature 'avatars' do
     expect {
       click_link 'delete'
     }.to change(Avatar, :count).by -1
+  end
 
+  scenario 'seeing all photos on the home page' do
+    avatar1 = FactoryGirl.create(:avatar)
+    avatar2 = FactoryGirl.create(:avatar)
+
+    visit root_path
+
+    expect(page).to have_content(avatar1.name)
+    expect(page).to have_content(avatar2.name)
   end
 end
