@@ -14,6 +14,8 @@ gem 'spring',        group: :development
 gem 'devise'
 gem 'paperclip'
 gem 'aws-sdk', '~> 1.20.0'
+gem 'bitters'
+gem 'bourbon'
 
 group :development do
   gem 'sqlite3'
