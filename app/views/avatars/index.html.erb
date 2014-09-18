@@ -1,9 +1,17 @@
-<h1>Avatar Index</h1>
-<p><i>click on an avatar to see a larger version and options</i></p>
+<div class='overlapPrevention'>
+  <div class='fadeIn'>
+    <h1 class='center'>Your Avatars</h1>
+    <p class='center'><i>click on an avatar to see a larger version and options</i></p>
 
-<p><%= link_to 'new avatar', new_avatar_path %></p>
 
-<% @avatars.each do |avatar| %>
-  <%= link_to avatar.name, avatar %> <br />
-  <%= link_to (image_tag avatar.photo.url(:thumb)), avatar %>
-<% end %>
+    <div class='avatars'>
+      <p><%= link_to '++ new avatar ++', new_avatar_path %></p>
+
+      <% @avatars.each do |avatar| %>
+        <div class='avatar'>
+          <%= link_to (image_tag avatar.photo.url(:thumb)), avatar %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,11 +1,40 @@
+.overlapPrevention {
+  padding-top: 40px;
+}
+
 a:hover {
   text-decoration: none;
 }
 
-.hero {
-  // margin-top: 100px;
+.fadeIn {
+  display: none;
 }
 
+.center {
+  text-align: center;
+}
+
+.avatars {
+  text-align: center;
+}
+
+.avatar {
+  display: inline;
+}
+
+h1 {
+  font-family: 'Sanchez';
+}
+
+p {
+  font-family: 'Questrial';
+}
+
+.navbar-brand {
+  font-family: 'Questrial';
+}
+
+// styles for landing page
 .image-gradient-dynamic {
   $image-gradient-color-top: red; 
   $transparency-top: .9;
@@ -69,4 +98,3 @@ a:hover {
     }
   }
 }
-

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :avatars
 
-  root 'avatars#index'
+  root 'pages#index'
   get 'pages/index'
 end

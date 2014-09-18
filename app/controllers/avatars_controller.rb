@@ -19,7 +19,7 @@ class AvatarsController < ApplicationController
     @avatar = Avatar.new(avatar_params)
 
     if @avatar.save
-      redirect_to root_path "You've successfully added a photo."
+      redirect_to avatars_path, notice: "You've successfully added a photo."
     else
       render :new
     end
@@ -35,7 +35,7 @@ class AvatarsController < ApplicationController
 
   def destroy
     @avatar.destroy
-    redirect_to root_path, notice: "Photo successfully deleted."
+    redirect_to avatars_path, notice: "Photo successfully deleted."
   end
 
   private
