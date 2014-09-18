@@ -3,5 +3,6 @@
 FactoryGirl.define do
   factory :avatar do
     name "MyString"
+    description 'A description'
   end
 end

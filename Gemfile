@@ -20,6 +20,7 @@ group :development do
   gem 'shoulda-matchers'
   gem 'pry'
   gem 'factory_girl_rails'
+  gem 'guard-rspec'
 end
 
 group :production do

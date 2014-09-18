@@ -1,0 +1,18 @@
+<h1>Avatar Show Page</h1>
+
+<p>
+  <%= link_to 'back', :back %>
+</p>
+
+<p>
+  <%= link_to 'edit', edit_avatar_path(@avatar) %> | 
+  <%= link_to 'delete', @avatar, method: :delete %>
+</p>
+
+<h1><%= @avatar.name %></h1>
+
+<p>
+  <%= @avatar.description %>
+</p>
+<%= image_tag @avatar.photo.url(:large) %>
+
